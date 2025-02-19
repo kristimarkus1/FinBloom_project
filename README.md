@@ -4,6 +4,11 @@
 **FinBloom** is a modern and user-friendly **budget-tracking application** designed to help users **manage income, expenses, savings, and debts** effectively. With **interactive visualizations** and **structured financial summaries**, FinBloom empowers users to take control of their finances.
 
 #### Hosted version at [finbloom.vercel.app](https://finbloom.vercel.app/)
+### 🧑‍💻 Test Account
+To try the app without signing up, use:
+Email: test3@gmail.com  
+Password: Test3!
+
 ---
 
 ## 🎯 Features
@@ -46,7 +51,15 @@ npm install firebase
 
 2. Create a Firebase project at Firebase Console.
 3. Enable Firestore & Authentication (Email/Password).
-4. Copy your Firebase credentials and add them to firebase.js.
+4. Copy your Firebase credentials and create a .env file:
+```
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+```
 
 ### 4️⃣ Start the App
 ```
@@ -54,6 +67,13 @@ npm start
 ```
 
 Runs the development server at http://localhost:3000.
+
+---
+
+## 📸 Screenshots
+![Login Page](login.png)
+![Dashboard](dashboard.png)
+![Budget Page](budget.png)
 
 ---
 
