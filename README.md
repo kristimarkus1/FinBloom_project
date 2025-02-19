@@ -22,7 +22,7 @@
 - **Database**: Firebase Firestore (for user data storage)
 - **Authentication**: Firebase Authentication
 - **Styling**: CSS Modules (Component-based styling)
-- **Deployment**: Netlify (Frontend hosting)
+- **Deployment**: Vercel (Frontend hosting)
 
 ---
 
