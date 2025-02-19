@@ -28,8 +28,9 @@
         "react-app/jest"
       ],
       "rules": {
-        "react/jsx-no-undef": "off"
-      }
+      "no-unused-vars": "warn",
+      "no-console": "warn"
+   }
     },
     "browserslist": {
       "production": [
