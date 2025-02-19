@@ -28,6 +28,7 @@ Password: Test3!
 - **Authentication**: Firebase Authentication
 - **Styling**: CSS Modules (Component-based styling)
 - **Deployment**: Vercel (Frontend hosting)
+- **Assets**: Procreate v5.3.13 (Logo & Graphics Design)
 
 ---
 
