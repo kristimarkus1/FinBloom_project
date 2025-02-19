@@ -1,0 +1,14 @@
+/* ============================ */
+/* Savings Page */
+/* ============================ */
+
+.savings-box {
+    background: var(--auth-box-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px auto;
+    overflow: auto;
+    max-width: 100%;
+}

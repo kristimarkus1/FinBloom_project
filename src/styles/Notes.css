@@ -1,0 +1,119 @@
+/* ============================ */
+/* Notes Page */
+/* ============================ */
+
+.notes-container {
+    background: var(--auth-box-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+}
+  
+.note-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.note-heading-input,
+.edit-heading-input,
+.note-textarea {
+    width: 80%; 
+    max-width: 600px; 
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    outline: none;
+    background: var(--input-bg);
+}
+
+.note-heading-input,
+.edit-heading-input {
+    text-align: left;
+}
+
+.note-heading-input:focus,
+.edit-heading-input:focus,
+.note-textarea:focus {
+    border-color: var(--button-bg); 
+    box-shadow: 0px 0px 5px rgba(255, 120, 120, 0.3); 
+    outline: none;
+}
+  
+.note-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+  
+.note-heading-input::placeholder,
+.note-textarea::placeholder {
+    font-family: "Arial", sans-serif; 
+    font-size: 14px;
+    color: var(--text-placeholder) 
+}
+  
+.add-note-btn {
+    background: var(--button-bg);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.notes-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note-item {
+    width: 80%;
+    max-width: 600px;
+    background: var(--note-bg);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    text-align: center;
+}
+  
+.note-item h3 {
+    margin-bottom: 5px;
+    font-size: 18px; 
+    color: var(--note-h);
+    text-align: left;
+}
+  
+.note-item p {
+    width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+    padding: 10px;
+    cursor: pointer;
+}
+  
+.delete-note-btn, 
+.save-note-btn {
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

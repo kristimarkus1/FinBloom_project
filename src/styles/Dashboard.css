@@ -1,0 +1,146 @@
+/* ============================ */
+/* Dashboard Page */
+/* ============================ */
+
+.dashboard-content {
+    display: flex;
+    align-items: stretch; 
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.dashboard-container {
+    padding-bottom: 20px;
+}
+
+.greeting {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.overview-text {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px; 
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 50%; 
+    gap: 20px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-box {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px; 
+}
+
+.budget-overview {
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.savings-overview {
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.budget-overview, 
+.savings-overview {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 20 auto; 
+}
+
+.expense-breakdown {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: var(--auth-box-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px; 
+    height: 100%;
+}
+
+.budget-overview, 
+.savings-overview, 
+.expense-breakdown {
+    background: var(--auth-box-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto; 
+}
+
+.expense-breakdown canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1100px) { 
+    .dashboard-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .budget-overview, 
+    .savings-overview, 
+    .expense-breakdown {
+        width: 100%;
+        max-width: 450px; 
+    }
+
+    .expense-breakdown {
+        order: 3; 
+    }
+}
+
+
+

@@ -1,0 +1,22 @@
+/* ============================ */
+/* Debts Page */
+/* ============================ */
+.debts-box {
+    background: var(--auth-box-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px auto;
+    overflow-x: auto; 
+    max-width: 100%;
+}
+
+.edit-input {
+    background: var(--input-bg); 
+    color: var(--text-color); 
+    border: 1px solid var(--border-color); 
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+}

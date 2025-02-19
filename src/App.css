@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* ============================ */
+/* Light Theme (Default) */
+/* ============================ */
+:root {
+    --background: #F6F5E1; /* Light background */
+    --auth-box-bg: #F5E6CC;/*#FFD8CC; /* Soft peach */
+    --text-color: #282D40; /* Dark text */
+    --input-border: #FB928E; /* Coral pink */
+    --button-bg: #FB928E; /* Coral pink */
+    --button-hover: #fcbab7; /* Lighter coral pink */
+    --input-bg: white;
+    --input-text-color: black;
+    --note-bg: #FFFFFF;
+    --note-h: #333;
+    --text-placeholder: #7d7d7d;
+    --border: 1px solid rgb(207, 207, 207);
+    --border-color: rgb(207, 207, 207);
+    --progress-bar-background: #F6F5E1;
+    --navbar-background: #F5E6CC;
+}
+
+/* ============================ */
+/* Dark Theme */
+/* ============================ */
+[data-theme="dark"] {
+    --background: #121212; /* Deep dark gray */
+    --auth-box-bg: #1E1E1E; /* Darker gray box */
+    --text-color: #E0E0E0; /* Light gray text */
+    --input-border: #3A3A3A; /* Medium gray border */
+    --button-bg: #3A3A3A; /* Grayish button */
+    --button-hover: #5A5A5A; /* Lighter gray hover */
+    --input-bg: #2A2A2A; /* Dark gray input fields */
+    --note-bg: #222;
+    --note-h: #e8e8e8;
+    --text-placeholder: #7d7d7d;
+    --border: 1px solid rgb(94, 94, 94);
+    --border-color: rgb(94, 94, 94);
+    --progress-bar-background: #fcfcfc;
+    --navbar-background: #1E1E1E;
+
+}
+
+/* ============================ */
+/* General Styling */
+/* ============================ */
+
+body {
+    background: var(--background);
+    color: var(--text-color);
+    font-family: "Lato", serif;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ============================ */
+/* Buttons & Hover Effects */
+/* ============================ */
+
+button, .auth-box button, .delete-btn {
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:not(.logout-btn):hover, .delete-btn:hover {
+    background: var(--button-hover);
+    transform: scale(1.05);
+}
+
+/* ============================ */
+/* Standardized Input Styling */
+/* ============================ */
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: var(--input-bg)!important;
+    color: var(--text-color)!important;
+}
+
+input:focus, select:focus {
+    border-color: var(--button-hover);
+    box-shadow: 0 0 5px rgba(255, 184, 191, 0.5);
+}
+
+/* ============================ */
+/* Table Styling Fixes */
+/* ============================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* ============================ */
+/* Login Page Styling */
+/* ============================ */
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background: var(--background);
+}
+
+.auth-box {
+    background: var(--auth-box-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-box input {
+    background: var(--input-bg) !important; 
+    color: var(--input-text-color) !important;
+    border: 2px solid var(--input-border);
+}
+
+input:focus, select:focus {
+    border-color: var(--button-hover);
+    box-shadow: 0 0 5px rgba(255, 184, 191, 0.5);
+    background: var(--note-bg); 
+}
+
+.login-inputs {
+    background: var(--input-bg) !important;
+    color: var(--input-text-color) !important;
+    border: 2px solid var(--input-border) !important;
+}
+
+.login-inputs::placeholder {
+    color: var(--text-placeholder) !important;
+}
+
+.loginLogo {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.auth-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.auth-box p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.auth-box input {
+    width: 90%; 
+    max-width: 350px; 
+    padding: 10px;
+    margin: 8px auto; 
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    font-size: 16px;
+    background: var(--input-bg); 
+    color: var(--input-text-color);
+    outline: none;
+    display: block; 
+    transition: 0.3s;
+}
+
+.auth-box input:focus {
+    border-color: var(--button-hover);
+    box-shadow: 0 0 5px rgba(255, 184, 191, 0.5);
+    background: var(--note-bg); 
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.auth-box button {
+    width: 100%;
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.auth-box button:hover {
+    background: var(--button-hover);
+    transform: scale(1.05);
+}
+
+.switch-auth {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.switch-auth:hover {
+    color: var(--button-bg);
+}
+
+@media (max-width: 768px) {
+    .auth-box {
+        padding: 20px;
+    }
+
+    .auth-box h2 {
+        font-size: 20px;
+    }
+
+    .auth-box input {
+        font-size: 14px;
+    }
+
+    .auth-box button {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+/* ============================ */
+/* Budget Page */
+/* ============================ */
+
+.income-box, 
+.fixed-expenses-box, 
+.non-fixed-expenses-box {
+    background: var(--auth-box-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px auto;
+    overflow: auto;
+    max-width: 100%;
+}
+
+.income-box table th,
+.fixed-expenses-box table th,
+.non-fixed-expenses-box table th {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; 
+}
+
+.income-box table th:nth-child(1),
+.fixed-expenses-box table th:nth-child(1),
+.non-fixed-expenses-box table th:nth-child(1) {
+    width: 20%;
+}
+
+.income-box table th:nth-child(2),
+.fixed-expenses-box table th:nth-child(2),
+.non-fixed-expenses-box table th:nth-child(2) {
+    width: 20%;
+}
+
+.income-box table th:nth-child(3),
+.fixed-expenses-box table th:nth-child(3),
+.non-fixed-expenses-box table th:nth-child(3) {
+    width: 20%;
+}
+
+.income-box table th:nth-child(4),
+.fixed-expenses-box table th:nth-child(4),
+.non-fixed-expenses-box table th:nth-child(4) {
+    width: 20%;
+}
+
+.income-box table th:nth-child(5),
+.fixed-expenses-box table th:nth-child(5),
+.non-fixed-expenses-box table th:nth-child(5) {
+    width: 20%;
+}
+
+input, 
+select {
+    background-color: var(--input-bg);
+    color: var(--input-text-color);
+    border: var(--border);
+    padding: 8px;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, 
+select:focus {
+    border-color: var(--button-bg);
+    background-color: var(--note-bg); 
+}
