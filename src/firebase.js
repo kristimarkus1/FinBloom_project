@@ -1,23 +1,23 @@
-// Import Firebase modules
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// Your Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCI_eM7Bdm_Lx3z4FJ_AO8wgr4MlP17E4c",
-    authDomain: "finbloom-4c24b.firebaseapp.com",
-    projectId: "finbloom-4c24b",
-    storageBucket: "finbloom-4c24b.firebasestorage.app",
-    messagingSenderId: "347566089452",
-    appId: "1:347566089452:web:70dca2c3f8640c5379b1c9",
-    measurementId: "G-K2DSZ5C0HW"
-  };
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY || "MISSING_API_KEY",
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN || "MISSING_AUTH_DOMAIN",
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID || "MISSING_PROJECT_ID",
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET || "MISSING_STORAGE_BUCKET",
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID || "MISSING_MESSAGING_SENDER_ID",
+  appId: process.env.REACT_APP_FIREBASE_APP_ID || "MISSING_APP_ID",
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID || "MISSING_MEASUREMENT_ID",
+};
 
-// Initialize Firebase
-// Initialize Firebase
+if (!process.env.REACT_APP_FIREBASE_API_KEY) {
+  console.warn("⚠️ Firebase API key is missing! Make sure to set up your .env file.");
+}
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const db = getFirestore(app); // Firestore database
+const db = getFirestore(app);
 
 export { auth, db };

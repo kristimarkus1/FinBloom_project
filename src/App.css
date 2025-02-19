@@ -4,12 +4,12 @@
 /* Light Theme (Default) */
 /* ============================ */
 :root {
-    --background: #F6F5E1; /* Light background */
-    --auth-box-bg: #F5E6CC;/*#FFD8CC; /* Soft peach */
-    --text-color: #282D40; /* Dark text */
-    --input-border: #FB928E; /* Coral pink */
-    --button-bg: #FB928E; /* Coral pink */
-    --button-hover: #fcbab7; /* Lighter coral pink */
+    --background: #F6F5E1;
+    --auth-box-bg: #F5E6CC;
+    --text-color: #282D40;
+    --input-border: #FB928E;
+    --button-bg: #FB928E;
+    --button-hover: #fcbab7;
     --input-bg: white;
     --input-text-color: black;
     --note-bg: #FFFFFF;
@@ -25,13 +25,13 @@
 /* Dark Theme */
 /* ============================ */
 [data-theme="dark"] {
-    --background: #121212; /* Deep dark gray */
-    --auth-box-bg: #1E1E1E; /* Darker gray box */
-    --text-color: #E0E0E0; /* Light gray text */
-    --input-border: #3A3A3A; /* Medium gray border */
-    --button-bg: #3A3A3A; /* Grayish button */
-    --button-hover: #5A5A5A; /* Lighter gray hover */
-    --input-bg: #2A2A2A; /* Dark gray input fields */
+    --background: #121212;
+    --auth-box-bg: #1E1E1E; 
+    --text-color: #E0E0E0; 
+    --input-border: #3A3A3A; 
+    --button-bg: #3A3A3A; 
+    --button-hover: #5A5A5A; 
+    --input-bg: #2A2A2A; 
     --note-bg: #222;
     --note-h: #e8e8e8;
     --text-placeholder: #7d7d7d;
