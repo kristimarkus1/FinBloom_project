@@ -29,8 +29,8 @@
 ## 🚀 Installation & Setup
 ### 1️⃣ Clone the Repository
 ```
-git clone https://github.com/kristimarkus1/finbloom.git
-cd finbloom
+git clone https://github.com/kristimarkus1/FinBloom_project.git
+cd FinBloom_project
 ```
 
 ### 2️⃣ Install Dependencies
